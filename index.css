@@ -1,0 +1,112 @@
+/* Configurações Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 25px;
+  border-radius: 8px;
+  border: 2px solid #ff007f;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #ff007f;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+header p {
+  color: #00f0ff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Seções Principais */
+.caixa {
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.caixa h2 {
+  color: #00f0ff;
+  border-bottom: 2px solid #ff007f;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.caixa p {
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+/* Grid de Jogos (Organização dos Cards em colunas) */
+.grid-jogos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card-jogo {
+  background-color: #2a2a2a;
+  border: 1px solid #ff007f;
+  border-radius: 6px;
+  padding: 15px;
+  flex: 1 1 calc(50% - 15px); /* Divide em 2 colunas organizadas */
+  min-width: 260px;
+}
+
+.card-jogo h3 {
+  color: #ff007f;
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-jogo .ano {
+  background-color: #00f0ff;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.card-jogo p {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #888888;
+  font-size: 13px;
+}
+
+/* Ajuste automático para tela de celular */
+@media (max-width: 600px) {
+  .card-jogo {
+    flex: 1 1 100%;
+  }
+}
